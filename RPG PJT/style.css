@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin-left:10%;
+  margin-right:10%;
+  padding:0;
+}
+header {
+  width: 720px;
+  height: 100px;
+  background-color: beige;
+  margin-top: 0;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#title {
+  text-align: center;
+}
+#interface {
+  border: 1px solid black;
+  position: relative;
+  width: 720px;
+  height: 480px;
+}
+#etc {
+  margin-top: 5px;
+  width: 720px;
+  display: flex;
+  justify-content: end;
+}
+
+#profile,
+#status,
+#game,
+#section {
+  position: absolute;
+}
+
+#profile {
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 80px;
+}
+
+#status {
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 80px;
+}
+
+#game {
+  top: 80px;
+  width: 720px;
+  height: 300px;
+}
+
+#section {
+  bottom: 0;
+  width: 720px;
+  height: 100px;
+}
+
+.btn {
+  display: inline;
+  width: 50px;
+  height: 25px;
+}
+
+.temp {
+  /* 영역 지정 확인용 테두리를 보여줄 클래스, 완성 후 모두 삭제 */
+  border: 1px solid black;
+}
