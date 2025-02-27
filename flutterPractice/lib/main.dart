@@ -11,6 +11,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Scaffold(appBar: AppBar(), body: PostList()));
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          leading: Image(image: AssetImage('assets/DP5.jpg')),
+          leadingWidth: 120,
+          actions: [IconButton(icon: Icon(Icons.menu), onPressed: () {})],
+        ),
+        body: PostList(),
+      ),
+    );
   }
 }

@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_app/features/feed/post_item.dart';
@@ -23,7 +24,7 @@ class _PostListState extends State<PostList> {
     // print('response.body: ${response.body}');
     try {
       if (response.statusCode == 200) {
-        List<dynamic> jsonData = json.decode(response.body); // JSON을 List로 변환
+        List<dynamic> jsonData = json.decode(response.body);
         setState(() {
           posts =
               jsonData
